@@ -1,0 +1,10 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@300;400;500;600&display=swap');
+
+//cores
+@import './core/colors';
+@import './core/fonts';
+@import './core/base';
+@import './core/mixins';
+
+@import './homepage/header';

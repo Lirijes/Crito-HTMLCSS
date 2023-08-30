@@ -1,0 +1,36 @@
+html, body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+// länkar
+a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: $color-theme-4;
+
+    &:hover {
+        color: $color-red;
+        transition: all 0.25s ease-in-out;
+        font-weight: $font-weight-bold;
+    }
+}
+
+//buttons
+.btn-theme {
+    background-color: $color-yellow;
+    border-radius: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 12px;
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        border: 1px solid $color-theme-4;
+        background-color: transparent;
+        transition: all 0.25s ease-in-out;
+    }
+}
