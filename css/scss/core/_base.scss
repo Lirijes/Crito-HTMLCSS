@@ -4,6 +4,12 @@ html, body {
     font-weight: 400;
 }
 
+.small-heading {
+    color: $color-red;
+    font-size: 18px;
+    font-weight: $font-weight-medium;
+}
+
 // länkar
 a {
     margin-left: 5px;
@@ -33,4 +39,39 @@ a {
         background-color: transparent;
         transition: all 0.25s ease-in-out;
     }
+}
+
+.btn-dark-theme {
+    background-color: $color-theme-4;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 12px;
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: $color-yellow;
+        color: $color-red;
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+.btn-play {
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+.play-btn {
+    border: 1px solid $color-theme-4;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.transparent-btn {
+    background-color: transparent;
+    border: 1px solid $color-theme-4;
 }

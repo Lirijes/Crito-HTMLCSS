@@ -1,0 +1,68 @@
+.founder-and-about {
+    margin-top: 50px;
+
+    .container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+
+        .founder {
+            position: relative;
+            width: 100%;
+
+            img {
+                width: 80%;
+                height: 100%;
+                margin-left: 10%;
+            }
+            .founder-content {
+                position: absolute;
+                margin-top: -40%;
+                height: 28%;
+                width: 90%;
+                background-color: #BEEBFF;
+                box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h6 {
+                    margin-left: 50px;
+                    font-family: $font-dmsans;
+                    font-weight: $font-weight-bold;
+                    font-size: 20px;
+
+                    .small-founder {
+                        font-size: 90%;
+                        color: $color-red;
+                    }
+                }
+
+                .founder-text{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    font-size: 16px;
+                    font-weight: $font-weight-medium;
+                }
+            }
+        }
+        .about {
+            h1{
+                margin-top: 30px;
+                font-family: $font-dmsans;
+                font-weight: $font-weight-bold;
+                font-size: 45px;
+            }
+            .about-text{
+                margin-top: 30px;
+                font-size: 16px;
+            }
+            .btn-dark-theme {
+
+            }
+            .btn-play {
+
+            }
+        }
+    }
+}

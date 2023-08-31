@@ -1,0 +1,31 @@
+.article-news {
+    margin-top: 70px;
+
+    .container {
+        display: block;
+        align-items: stretch;
+
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            h1 {
+                font-family: $font-dmsans;
+                font-weight: $font-weight-bold;
+                font-size: 45px;
+            }
+            .article-btn {
+                margin-top: 11px;
+                height: 100%;
+
+            }
+        }
+        .article-news-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}

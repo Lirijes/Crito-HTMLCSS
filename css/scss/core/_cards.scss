@@ -1,0 +1,162 @@
+.advice-card {
+    width: 50%;
+
+    i {
+        font-size: 16px;
+    }
+    h3 {
+        font-family: $font-dmsans;
+        font-size: 12px;
+        font-weight: $font-weight-bold;
+        margin-top: 10px;
+    }
+
+    p{
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    @include mx {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 70%;
+
+        .advice-card-icon {
+            font-size: 18px;
+        }
+        h3 {
+            font-family: $font-dmsans;
+            font-size: 16px;
+            font-weight: $font-weight-bold;
+            margin-top: 10px;
+        }
+    
+        p{
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @include xl {
+        i {
+            font-size: 22px;
+        }
+        h3 {
+            font-family: $font-dmsans;
+            font-size: 22px;
+            font-weight: $font-weight-bold;
+            margin-top: 10px;
+        }
+    
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+.service-card {
+    background-color: $color-white;
+    height: 333px;
+    width: 308;
+
+    &:hover {
+        background-color: $color-yellow;
+        transition: all 0.25s ease-in-out;
+        transform: scale(1.05);
+
+        .card-body {
+            .arrow-btn {
+                background-color: $color-white;
+                color: $color-theme-4;
+            }
+        }
+    }
+
+    .card-body {
+        position: relative;
+        margin: 15px;
+
+        .card-line {
+            background-color: $color-theme-4;
+            color: $color-theme-4;
+            width: 35px;
+            height: 1.2px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .service-card-title {
+            font-family: $font-dmsans;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .service-card-text {
+            font-weight: $font-weight-regular;
+            font-size: 16px;
+            margin-bottom: 60px;
+        }
+        .arrow-btn {
+            position: absolute;
+            right: 10%;
+            background-color: $color-theme-4;
+            color: $color-white;
+            border-radius: 50%;
+            padding: 10px;
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-theme-4;
+            }
+        }
+    }
+}
+
+.article-card {
+    position: relative;
+
+    &:hover {
+        transition: all 0.25s ease-in-out;
+        transform: scale(1.05);
+        color: $color-theme-4;
+    }
+
+    .article-card-img {
+        width: 100%;
+    }
+    .article-card-date {
+        position: absolute;
+        background-color: $color-yellow;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        top: 20px;
+        left: 20px;
+
+        h5 {
+            font-size: 14px;
+        }
+
+        .month {
+            margin: 0px;
+            font-size: 11px;
+        }
+    }
+
+    .article-card-category {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .article-card-header {
+        font-family: $font-dmsans;
+        font-weight: $font-weight-bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .article-card-text {
+        font-size: 14px;
+    }
+}

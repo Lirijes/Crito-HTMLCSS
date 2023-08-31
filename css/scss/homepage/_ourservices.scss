@@ -1,0 +1,28 @@
+.our-services {
+    margin-top: 80px;
+    background-color: $color-theme-1;
+    border: 1px solid $color-theme-1;
+
+    .container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        
+        h1 {
+            font-family: $font-dmsans;
+            font-weight: $font-weight-bold;
+            font-size: 45px;
+            margin-right: 50%;
+            margin-top: 20px;
+        }
+        .services-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .service-btn {
+            margin-left: 45%;
+        }
+    }
+}

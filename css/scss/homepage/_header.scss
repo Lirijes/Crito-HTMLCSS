@@ -7,13 +7,24 @@ header {
     }
     
     .nav-section {
+        margin-top: 10px;
+
         .container {
             display: flex;
-            //justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
+
+            @include xl {
+                display: flex;
+                align-items: center;
+            }
 
             .logotype {
-                margin-top: 10%;
+                width: 70%;
+                height: auto;
+
+                @include mx {
+                    margin-top: 10%;
+                }
             }
 
             nav {
@@ -21,16 +32,26 @@ header {
 
                 .first-row {
                     display: flex;
-                    justify-content: space-between;
-                    margin-left: 30px;
-                    margin-top: 5%;
-                    margin-bottom: 20px;
-                    width: 95%;
-                    border-bottom: 1px solid #DAD9D3;
+                    justify-content: end;
+                    margin-right: 20px;
+
+                    @include lg {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 30px;
+                        margin-top: 5%;
+                        margin-bottom: 20px;
+                        width: 95%;
+                        border-bottom: 1px solid #DAD9D3;
+                    }
 
                     .company-info {
-                        font-family: "Inter", sans-serif;
-                        
+                        display: none;
+
+                        @include lg {
+                            display: flex;
+                        }
+
                         span {
                             font-size: 15px;
                             margin-right: 20px;
@@ -41,12 +62,27 @@ header {
                 }
 
                 .second-row {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-left: 30px;
+                    display: none;
+
+                    @include mx {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 30px;
+                    }
+
+                    @include xl {
+                        margin-left: 30px;
+                    }
 
                     .navbar {
+                        display: none;
+                        justify-content: end;
+
+                        @include lg {
+                            display: flex;
+                        }
+
                         a {
                             margin-right: 20px;
 
@@ -64,6 +100,19 @@ header {
                             }
                         }
                     }
+                    .login-btn {
+                        display: none;
+                    }
+                }
+            }
+            .toggle {
+                display: flex;
+                justify-content: end;
+                text-align: right;
+                z-index: 1;
+        
+                @include lg {
+                    display: none;
                 }
             }
         }
@@ -71,24 +120,51 @@ header {
 
     .showcase {
         .container {
-            display: flex;
-            margin-top: 20px;
+            margin-top: 40px;
+
+            @include mx {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            @include lg {
+                display: flex;
+            }
 
             .content-column {
-                margin-top: 10%;
+                margin-bottom: 30px;
+
+                @include lg {
+                    margin-top: 10%; 
+                    margin-bottom: 0;
+                }
 
                 h1 {
                     font-weight: $font-weight-bold;
-                    font-size: 56px;
+                    font-size: 30px;
+
+                    @include lg {
+                        font-size: 56px; 
+                    }
                 }
 
-                p {
-                    font-size: 20px;
+                .showcase-text {
+                    font-size: 11px;
+
+                    @include lg {
+                        font-size: 20px; 
+                    }
                 }
             }
             .showcaseimg {
-                width: 50%;
-                height: auto;
+                display: none;
+
+                @include mx {
+                    display: inline;
+                    width: 50%;
+                    height: auto;
+                }
             }
         }
     }
