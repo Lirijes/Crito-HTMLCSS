@@ -1,9 +1,14 @@
 header {
+    position: relative;
     background-color: #F0EFE9;
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 
     .background-lines {
+        position: absolute;
+        width: 50%;
+        bottom: 0;
     }
     
     .nav-section {

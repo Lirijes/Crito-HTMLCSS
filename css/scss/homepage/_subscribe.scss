@@ -1,0 +1,27 @@
+.subscribe-section {
+    position: relative;
+    background-color: $color-theme-1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: $font-dmsans;
+        font-weight: $font-weight-bold;
+        font-size: 20px;
+    }
+    .subscribe-input {
+        border-radius: 20px;
+        border: 0px;
+        margin-left: 100px;
+        padding: 6px;
+    }
+    .background-wavy-lines {
+        position: absolute;
+        height: 30%;
+        right: 0;
+        top: 55%;
+    }
+}
