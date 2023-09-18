@@ -15,11 +15,13 @@
             margin-top: 20px;
         }
         .services-cards {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            margin-top: 50px;
-            margin-bottom: 50px;
+            .umb-block-list {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
         }
         .service-btn {
             margin-left: 45%;

@@ -7,18 +7,19 @@
         padding-bottom: 60px;
 
         .news-content-column {
+            flex-direction: row;
             p {
                 font-size: 14px;
                 display: flex;
                 justify-content: center;
             }
-            h1 {
-                font-family: $font-dmsans;
-                font-weight: $font-weight-bold;
-                font-size: 50px;
-                display: flex;
-                justify-content: center;
-            }
+        }
+        h1 {
+            font-family: $font-dmsans;
+            font-weight: $font-weight-bold;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
         }
     }
 }
