@@ -703,6 +703,19 @@ header .showcase .container .showcaseimg {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+.news-articles .container .item-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.news-articles .container .item-pagination .item-link {
+  border: 1px solid #F0EFE9;
+  padding: 5px;
+}
+.news-articles .container .item-pagination .active {
+  background-color: #F0EFE9;
+}
 .news-articles .container .numbers {
   display: flex;
   justify-content: center;
