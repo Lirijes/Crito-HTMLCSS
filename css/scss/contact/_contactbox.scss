@@ -4,8 +4,8 @@
     .container {
         background-color: $color-theme-1;
         padding: 100px;
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
 
         h1 {
@@ -16,26 +16,45 @@
             margin-right: 150px;
             margin-bottom: 20px;
         }
-        .contact-input {
-            margin-bottom: 20px;
-            border-radius: 20px;
-            border: 0;
-            padding-left: 20px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-size: 11px;
-        }
-        .contact-textarea {
-            margin-bottom: 20px;
-            border-radius: 20px;
-            border: 0;
-            padding-left: 20px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-size: 11px;
-        }
-        .contact-btn {
 
+        .contact-us-input {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .text-danger {
+                margin-left: 20px;
+                font-style: italic;
+                font-size: 12px;
+            }
+
+            .contact-input {
+                border-radius: 20px;
+                border: 0;
+                padding-left: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 11px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .contact-textarea {
+                border-radius: 20px;
+                border: 0;
+                padding-left: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 11px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        
+        .contact-btn {
+            border: none;
+            margin-top: 30px;
         }
     }
 }

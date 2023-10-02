@@ -1,0 +1,59 @@
+.why-choose-us {
+    .container {
+        display: flex;
+        margin-top: 70px;
+        position: relative;
+
+        .left-side {
+            width: 50%;
+
+            h1 {
+                padding-top: 10px;
+                font-family: $font-dmsans;
+                font-weight: $font-weight-bold;
+                font-size: 45px;
+                margin-bottom: 30px;
+            }
+            .choose-us-info {
+                display: flex;
+                margin-bottom: 10px;
+
+                .choose-us-icon {
+                    border: 1px solid $color-theme-1;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 20px;
+                }
+                h6 {
+                    font-size: 16px;
+                    font-weight: $font-weight-bold;
+                    font-family: $font-dmsans;
+                }
+                p {
+                    font-size: 12px;
+                    color: gray;
+                }
+            }
+        }
+        .right-side {
+            .box-theme-color {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                background-color: $color-theme-1;
+                width: 630px;
+                height: 250px;
+            }
+            img {
+                position: absolute;
+                bottom: 60px;
+                right: 130px;
+                height: 70%;
+            }
+        }
+    }
+}

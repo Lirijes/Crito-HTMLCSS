@@ -1,0 +1,140 @@
+.meetourteam {
+    background-color: $color-yellow;
+
+    .container {
+        padding-top: 50px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+
+        .meetourteamheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .title {
+                font-family: $font-dmsans;
+                font-weight: $font-weight-bold;
+                font-size: 45px;
+                margin-top: 20px;
+            }
+            .btn-theme-light {
+                background-color: #fce5ac;
+                border: 1px solid black;
+
+                &:hover {
+                    background-color: $color-yellow;
+                }
+            }
+        }
+        .employees {
+            .umb-block-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .employee-card {
+                    margin-right: 20px;
+    
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+    
+                    img {
+                        width: 250px;
+                        height: 370px;
+                    } 
+    
+                    h4 {
+                        font-family: $font-dmsans;
+                        font-weight: $font-weight-bold;
+                        font-size: 16px;
+                        margin-top: 20px;
+                    } 
+                    p {
+                        font-weight: $font-weight-regular;
+                        font-size: 12px;
+                        opacity: 70%;
+                    }
+                }
+            }
+        }
+        .testimonial {
+            background-color: white;
+            padding-top: 50px;
+            margin-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .tesimonial-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                h1 {
+                    font-family: $font-dmsans;
+                    font-weight: $font-weight-bold;
+                    font-size: 45px;
+                    margin-top: 20px;
+                }
+            }
+            .client-card {
+                .umb-block-list {
+                    display: flex;
+                    align-items: start;
+                    justify-content: space-evenly;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    
+                    .clients-card-body {
+                        margin: 50px;
+    
+                        .stars {
+                            color: $color-red;
+                            font-size: 12px;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-weight: $font-weight-regular;
+                            font-size: 14px;
+                        }
+                        .client-content {
+                            display: flex;
+                            align-items: center;
+                            justify-content: start;
+                            gap: 15px;
+    
+                            img {
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                            }
+                            .client-info {
+                                h4 {
+                                    font-family: $font-dmsans;
+                                    font-weight: $font-weight-bold;
+                                    font-size: 16px;
+                                    margin-top: 20px;
+                                }
+                                p {
+                                    font-weight: $font-weight-regular;
+                                    font-size: 12px;
+                                    color: $color-red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-reviews {
+                width: 10%;
+                margin-left: 550px;
+            }
+        }
+    }
+}
